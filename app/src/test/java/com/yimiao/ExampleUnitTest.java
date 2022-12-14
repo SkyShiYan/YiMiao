@@ -89,7 +89,7 @@ public class ExampleUnitTest {
         mRule = new YiMiaoMonthEntity();
         mRule.h = h;
         mRule.month = 3;
-        rules.add(rule);
+        rules.add(mRule);
         doseEntity.rules = rules;
         doseEntities.add(doseEntity);
         // 第三针
@@ -99,7 +99,7 @@ public class ExampleUnitTest {
         mRule = new YiMiaoMonthEntity();
         mRule.h = h;
         mRule.month = 4;
-        rules.add(rule);
+        rules.add(mRule);
         doseEntity.rules = rules;
         doseEntities.add(doseEntity);
         // 第四针

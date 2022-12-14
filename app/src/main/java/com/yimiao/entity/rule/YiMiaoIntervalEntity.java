@@ -18,7 +18,7 @@ public class YiMiaoIntervalEntity implements IYiMiaoRule {
         if (lastDose == null || lastDose.confirmDate == null) {
             return new Date();
         }
-        return new Date(lastDose.confirmDate.getTime() + minInterval * 24 * 60 * 60 * 1000);
+        return new Date(lastDose.confirmDate.getTime() + minInterval * 24 * 60 * 60 * 1000L);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class YiMiaoIntervalEntity implements IYiMiaoRule {
         } else {
             endDate = lastDose.confirmDate;
         }
-        return new Date(endDate.getTime() + maxInterval * 24 * 60 * 60 * 1000l);
+        return new Date(endDate.getTime() + maxInterval * 24 * 60 * 60 * 1000L);
     }
 
     @Override
